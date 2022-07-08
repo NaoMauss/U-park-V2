@@ -19,6 +19,5 @@
             </a>
         </div> 
     </div>
-<!-- Nao est passé par là (BackEnd Developper embauchez moi svp alternance cdi stage je prend tout 06 28 04 19 97 ) -->
 </footer>
 

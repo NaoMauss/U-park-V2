@@ -1,12 +1,14 @@
+const gologin = document.querySelector(".go-login");
+const gosign = document.querySelector(".go-sign-in");
 const login = document.querySelector(".login");
 const sign = document.querySelector(".sign-in");
 
-login.addEventListener("click", () => {
+gologin.addEventListener("click", () => {
     login.classList.toggle("active")
     sign.classList.toggle("active")
 })
 
-sign.addEventListener("click", () => {
+gosign.addEventListener("click", () => {
     login.classList.toggle("active")
     sign.classList.toggle("active")
 })

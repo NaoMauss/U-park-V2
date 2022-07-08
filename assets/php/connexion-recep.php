@@ -2,6 +2,7 @@
 <?php 
     session_start(); // Démarrage de la session
     require '../database/pdo.php'; // On inclut la connexion à la base de données
+    var_dump("teste unitaaaaaire");
 
     if(!empty($_POST['email']) && !empty($_POST['password'])) // Si il existe les champs email, password et qu'il sont pas vident
     {
@@ -29,7 +30,7 @@
 
                     // On créer la session et on redirige sur index.php
                     $_SESSION['user'] = $data['userId'];
-                    header('location: ../../index.php');
+                    header('location: ../pages/home.php');
                     die();
                 }else{ header("Location: ../index.php?login_err=password_incorect"); die(); }
             }else{ header('Location: ../index.php?login_err=format_email_pas_bon'); die(); }

@@ -30,9 +30,6 @@ Faire découvrir les petits commerçcants en permettant aux clients d'avoir des 
 | Clément  | Bayel        | Graphiste             | Tentative de Manifest | https://www.linkedin.com/in/bayelc/ |
 | Phara    | Millauriaux  | Présentation          | Réussite de Passage à l'oral | https://www.linkedin.com/in/phara-millauriaux-5112b2152/ |
 | Cyprien  | Cazenave     | Présentation          | Tentative de Passage à l'oral | https://www.linkedin.com/in/cypriencazenave/ |
-| <span style="color: #fd79a8">Nao (aide)</span>     | <span style="color: #fd79a8">Mausservey</span>   | <span style="color: #fd79a8">Développeur Fullstack</span> |    <span style="color: #fd79a8">Aide Front</span>   | https://www.linkedin.com/in/nao-mausservey/ |
-| <span style="color: #fd79a8">Clément (aide)</span> | <span style="color: #fd79a8">Phlipponneau</span> | <span style="color: #fd79a8">Développeur Fullstack</span> |    <span style="color: #fd79a8">Aide Back</span>    | https://www.linkedin.com/in/clement-phlipponneau/ https://github.com/clementpnn https://codepen.io/clement-pnn |
-| <span style="color: #FFD700">Victor (aide)</span>  | <span style="color: #FFD700">Huang</span>        | <span style="color: #FFD700">Happiness Manager</span>     |    <span style="color: #FFD700">Petite aide</span>  | https://www.linkedin.com/in/linkvictorhuang/ |
 
 ## Technologies utilisées
 

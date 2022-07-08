@@ -44,7 +44,7 @@
                             ));
                             
                             // On redirige avec le message de succès
-                            header('location: ../../index.php');
+                            header('location: home.php');
                             die();
                         }else{ header('Location: index.php?reg_err=mdp_different'); die();}
                     }else{ header('Location: index.php?reg_err=email_pas_de_bonne_forme'); die();}

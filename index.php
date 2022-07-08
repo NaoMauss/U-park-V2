@@ -17,7 +17,7 @@ include './assets/php/header.php';
                 <input type="password" placeholder="Mot de passe">
                 <input class="connexion" type="submit" value="Connexion">
             </form>
-            <input class="go-sign-in" type="submit" value="Inscription">
+            <input class="go-sign-in" type="button" value="Inscription">
         </div>
         <div class="sign-in">
             <p class="title">Inscription</p>
@@ -29,7 +29,7 @@ include './assets/php/header.php';
                     <input type="password" name="confirm-password" placeholder="Confirmez le mot de passe">
                     <input class="connexion" type="submit" value="Inscription">
                 </form>
-                <input class="go-login"  type="" value="Connexion">
+                <input class="go-login"  type="button" value="Connexion">
         </div>
     </div>
 <?php 
