@@ -16,10 +16,10 @@ include '../php/header.php';
                 <img src="../img/Group.svg" alt="image de profil">
                 <div>
                     <div>
-                        Prenom Nom
+                        Prenom
                     </div>
                     <div>
-                        client_1@gmail.com                    
+                        Nom                 
                     </div>
                 </div>
                 <div>
@@ -28,7 +28,7 @@ include '../php/header.php';
             </div>  
             <div class="setting">
                 <div class="items_settings">
-                    <div>Inscripion</div>
+                    <div>Inscription</div>
                     <img src="../img/Vector.svg" alt="image pour la suite">
                 </div>
             </div>
@@ -70,7 +70,10 @@ include '../php/header.php';
             </div>
             <div class="setting" id="margin_setting">
                 <div class="items_settings">
-                    <div>Se déconnecter</div>
+                    <form action="../php/deconnexion.php">
+                        <input type="submit" value="se déconnecter">
+                    </form>
+                    
                     <img src="../img/Vector.svg" alt="image pour la suite">
                 </div>
             </div>

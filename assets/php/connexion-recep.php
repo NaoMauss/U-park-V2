@@ -32,7 +32,7 @@
                     $_SESSION['user'] = $data['userId'];
                     header('location: ../pages/home.php');
                     die();
-                }else{ header("Location: ../index.php?login_err=password_incorect"); die(); }
-            }else{ header('Location: ../index.php?login_err=format_email_pas_bon'); die(); }
-        }else{ header('Location: ../index.php?login_err=utilisateur_existe_pas'); die(); }
-    }else{ header('Location: ../index.php'); die();} // si le formulaire est envoyé sans aucune données
+                }else{ header("Location: ../pages/home.php?login_err=password_incorect"); die(); }
+            }else{ header('Location: ../pages/home.php?login_err=format_email_pas_bon'); die(); }
+        }else{ header('Location: ../pages/home.php?login_err=utilisateur_existe_pas'); die(); }
+    }else{ header('Location: ../pages/home.php'); die();} // si le formulaire est envoyé sans aucune données

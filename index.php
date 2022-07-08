@@ -8,6 +8,7 @@ include './assets/php/header.php';
 
 
 
+
 <body>
     <div class="contener">
         <div class="login">
@@ -32,9 +33,7 @@ include './assets/php/header.php';
                 <input class="go-login"  type="button" value="Connexion">
         </div>
     </div>
-<?php 
-    include_once('./assets/pages/footer.php')
-?>
+
 
 <script src="./assets/js/change-state.js"></script>
 </body>
