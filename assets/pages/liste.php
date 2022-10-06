@@ -1,11 +1,12 @@
 <?php
 include '../php/header.php';
 ?>
-    <title>Liste</title>
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/page-css/map_list.css">
+<title>Liste</title>
+<link rel="stylesheet" href="../styles/style.css">
+<link rel="stylesheet" href="../styles/page-css/map_list.css">
 
 </head>
+
 <body class="main_liste">
     <main>
         <div class="search_filter_bar">
@@ -14,7 +15,7 @@ include '../php/header.php';
                     <div class="icon_text">
                         <img src="../img/Vector.svg" alt="">
                         <input id="search_bar_list" type="text" placeholder="Votre recherche...">
-                    </div>   
+                    </div>
                     <img src="../img/mic.svg" alt="">
                 </div>
                 <div class="map_switch_list">
@@ -30,7 +31,7 @@ include '../php/header.php';
             </div>
         </div>
         <div id="all_result_liste" class="all_result_liste">
-        <?php
+            <?php
             require '../database/pdo.php';
             $inserte = $pdo->prepare('SELECT * FROM shop');
             $inserte->execute();
@@ -38,7 +39,7 @@ include '../php/header.php';
 
             foreach($shop as $shop) {
 
-                // s pour shop bande d'idiots
+                // s pour shop
                 $sid = $shop['shopId'];
                 $sname = $shop['shopName'];
                 $spic = $shop['shopPic'];
@@ -46,11 +47,11 @@ include '../php/header.php';
 
                 echo "<div class='result'>
                 <div class='logo_recent'>
-                    <img src='$spic' alt=''>
+                    <img src='$spic' alt='$sname'>
                 </div>
                 <div class='texte'>
                     <div style='margin-bottom: 5px;'>$sname</div>
-                    <div>$splace</div>
+                    <button><a href=$splace>Aller voir</a></button>
                 </div>
                 </div>";
             }
@@ -65,9 +66,12 @@ include '../php/header.php';
         <div id="all_commerce" class="all_commerce">
             <div class="commerce">
                 <div class="all_image_commerce">
-                    <img class="image_commerce" src="../img/closeup-of-two-women-wearing-facemasks-during-the-covid-19-pandemic-sitting-at-cafe.jpg" alt="">
+                    <img class="image_commerce"
+                        src="../img/closeup-of-two-women-wearing-facemasks-during-the-covid-19-pandemic-sitting-at-cafe.jpg"
+                        alt="">
                     <img class="image_commerce" src="../img/colorful-paper-bags-placed-on-the-table.jpg" alt="">
-                    <img class="image_commerce" src="../img/interior-shot-of-cafe-with-chairs-near-the-bar-with-wooden-tables.jpg" alt="">
+                    <img class="image_commerce"
+                        src="../img/interior-shot-of-cafe-with-chairs-near-the-bar-with-wooden-tables.jpg" alt="">
                 </div>
                 <div class="all_texte_commerce">
                     <span class="nom_commerce">Ibis Paris Vaugirard Porte de Versailles</span>
@@ -77,9 +81,12 @@ include '../php/header.php';
             </div>
             <div class="commerce">
                 <div class="all_image_commerce">
-                    <img class="image_commerce" src="../img/closeup-of-two-women-wearing-facemasks-during-the-covid-19-pandemic-sitting-at-cafe.jpg" alt="">
+                    <img class="image_commerce"
+                        src="../img/closeup-of-two-women-wearing-facemasks-during-the-covid-19-pandemic-sitting-at-cafe.jpg"
+                        alt="">
                     <img class="image_commerce" src="../img/colorful-paper-bags-placed-on-the-table.jpg" alt="">
-                    <img class="image_commerce" src="../img/interior-shot-of-cafe-with-chairs-near-the-bar-with-wooden-tables.jpg" alt="">
+                    <img class="image_commerce"
+                        src="../img/interior-shot-of-cafe-with-chairs-near-the-bar-with-wooden-tables.jpg" alt="">
                 </div>
                 <div class="all_texte_commerce">
                     <span class="nom_commerce">Ibis Paris Vaugirard Porte de Versailles</span>
@@ -89,9 +96,12 @@ include '../php/header.php';
             </div>
             <div class="commerce">
                 <div class="all_image_commerce">
-                    <img class="image_commerce" src="../img/closeup-of-two-women-wearing-facemasks-during-the-covid-19-pandemic-sitting-at-cafe.jpg" alt="">
+                    <img class="image_commerce"
+                        src="../img/closeup-of-two-women-wearing-facemasks-during-the-covid-19-pandemic-sitting-at-cafe.jpg"
+                        alt="">
                     <img class="image_commerce" src="../img/colorful-paper-bags-placed-on-the-table.jpg" alt="">
-                    <img class="image_commerce" src="../img/interior-shot-of-cafe-with-chairs-near-the-bar-with-wooden-tables.jpg" alt="">
+                    <img class="image_commerce"
+                        src="../img/interior-shot-of-cafe-with-chairs-near-the-bar-with-wooden-tables.jpg" alt="">
                 </div>
                 <div class="all_texte_commerce">
                     <span class="nom_commerce">Ibis Paris Vaugirard Porte de Versailles</span>
@@ -112,21 +122,21 @@ include '../php/header.php';
 
     <script src="js/map_list.js"></script>
     <script>
-        const search_bar_list = document.querySelector('#search_bar_list')  
-        search_bar_list.addEventListener('change', (e) => {  
-            if (e.target.value == ""){
-                document.querySelector('#filter_bar_list').style.display = "flex";
-                document.querySelector('#all_result_liste').style.display = "flex";
-                document.querySelector('#filter_commerce').style.display = "none";
-                document.querySelector('#all_commerce').style.display = "none";
-            }
-            else{
-                document.querySelector('#filter_bar_list').style.display = "none";
-                document.querySelector('#all_result_liste').style.display = "none";
-                document.querySelector('#filter_commerce').style.display = "flex";
-                document.querySelector('#all_commerce').style.display = "block";
-            }
-        });
+    const search_bar_list = document.querySelector('#search_bar_list')
+    search_bar_list.addEventListener('change', (e) => {
+        if (e.target.value == "") {
+            document.querySelector('#filter_bar_list').style.display = "flex";
+            document.querySelector('#all_result_liste').style.display = "flex";
+            document.querySelector('#filter_commerce').style.display = "none";
+            document.querySelector('#all_commerce').style.display = "none";
+        } else {
+            document.querySelector('#filter_bar_list').style.display = "none";
+            document.querySelector('#all_result_liste').style.display = "none";
+            document.querySelector('#filter_commerce').style.display = "flex";
+            document.querySelector('#all_commerce').style.display = "block";
+        }
+    });
     </script>
 </body>
+
 </html>

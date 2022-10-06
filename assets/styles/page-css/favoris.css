@@ -1,147 +1,124 @@
-/* Y'a plein de trucs qui vont pas je te laisse juger - Nao*/
-
-body{
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding:25px;
-    background-color: #2F3237;
-    height: 100vh;
-    overflow: hidden;
+body {
+  font-family: Arial, sans-serif;
+  padding: 25px;
+  background-color: #2f3237;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.nav_barre{
-    background-color: #4B5058;
-    width: 100%;
-    border-radius:12px;
-    height: 64px;
-  
-}
-.item_nav_barre{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin:0 20px;
-    height: 100%;
-    margin-bottom: 25px;
-}
-
-
-
-
-.recherche{
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    width: 100%;
-    height: 48px;
-    background-color: #4B5058;
-    border-radius: 9px;
+.recherche {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  background-color: #4b5058;
+  border-radius: 9px;
+  margin-bottom: 30px;
 }
 
 .recherche input {
-    height: 45px;
-    background-color: #4B5058;
-    border: 0;
-    outline: 0;
-    color: #E0E0E0;
+  height: 45px;
+  background-color: #4b5058;
+  border: 0;
+  outline: 0;
+  color: #e0e0e0;
 }
 
-::placeholder{
-    color:#E0E0E0;;
+::placeholder {
+  color: #e0e0e0;
 }
 
-.loupe{
-    display: flex;
-    align-items: center;
+.loupe {
+  display: flex;
+  align-items: center;
 }
-.recherche img{
-    margin: 0 10px 0 25px;
+.recherche img {
+  margin: 0 10px 0 25px;
 }
-.recherche .micro{
-    margin-right: 25px;
-}
-
-.recherche input{
-    
-    height:45px;
-    
-    background-color: #4B5058;
-    
-    border: 0;
-    outline: 0;
-    color:#E0E0E0;;
-    
+.recherche .micro {
+  margin-right: 25px;
 }
 
+.recherche input {
+  height: 45px;
 
+  background-color: #4b5058;
 
-
-
-
-
-
-
-.contener_favoris{
-   
-    width: 100%;
-    height: calc(100% - 212px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow-y: scroll;
-    
-
-}
-.contener_favoris::-webkit-scrollbar{width:0px}
-.favoris{
-    width: 100%;
-    background-color: #4B5058;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #E0E0E0;;
-    margin-bottom: 25px;
-    padding: 15px; 
-    box-sizing: border-box;
-    border-radius: 12px;
-    
-}
-.favoris:last-child{
-    margin-bottom: 0;
+  border: 0;
+  outline: 0;
+  color: #e0e0e0;
 }
 
-.img_text{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contener_favoris {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding: 0;
+}
+.contener_favoris::-webkit-scrollbar {
+  width: 0px;
+}
+.favoris {
+  width: 100%;
+  background-color: #4b5058;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #e0e0e0;
+  margin-bottom: 25px;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+.favoris:last-child {
+  margin-bottom: 0;
 }
 
-.image_entreprise img{
-    width: 80px;
-    height: 80px;
-    margin-right: 25px;
-    border-radius: 9px;
-}
-.text_favoris{
-    display: flex;
-    flex-direction: column;
-
-   
-}
-.text_favoris p:nth-child(2){
-    padding: 10px 0;
-
-}
-.text_favoris p:nth-child(1){
-    font-weight: bold;
+.img_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.image_entreprise svg {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  border-radius: 12px;
+}
+.text_favoris {
+  display: flex;
+  flex-direction: column;
+}
+.text_favoris p:nth-child(2) {
+  padding: 10px 0;
+}
+.text_favoris p:nth-child(1) {
+  font-weight: bold;
+}
+
+.nav_barre {
+  background-color: #4b5058;
+  width: 100%;
+  border-radius: 12px;
+  height: 64px;
+}
+.item_nav_barre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
 
 /* sandie */
 
 footer {
-    padding: 0px
+  position: fixed;
+  height: 60px;
+  padding: 0 25px;
+  bottom: 25px;
+  border-top: 10px;
+  left: 0;
 }
